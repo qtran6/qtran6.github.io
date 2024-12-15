@@ -1,8 +1,14 @@
-/* Body */
+/* Home Page */
+.home {
+    background: url('../images/sulivan-lake.jpg') no-repeat bottom center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
 
-body {
-    min-height: 100vh;
-    background-image: url('images/anime-sakura.jpg');
+/* About Me Body */
+.about {
+    background-image: url('../images/anime-sakura.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -10,20 +16,18 @@ body {
     align-self: center;
 }
   
-  /* Main Container */
+/* Main Container */
 main {
-    width: 100%;
-    margin-top: 7%;
+    margin-top: 2em;
 
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
     padding: 2em;
 
     /* centers container to page */
     margin-inline: auto;
-
-    /* adjust to your design */
+    
     max-width: 30em;
 
     display: flex;

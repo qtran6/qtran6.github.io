@@ -13,30 +13,21 @@
     <title>Personal Website</title>
 
    <!-- Baseline Styling -->
-   <link rel="stylesheet" href="baseStyle.css">
+   <link rel="stylesheet" href="styles/baseStyle.css">
    <!-- Specific Elements -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="styles/style.css">
 
    <!-- JavaScript -->
-    <script src="script.js" defer></script> 
+    <script src="scripts/script.js" defer></script> 
 
 </head>
-<body>
-
-    <main>
-        <h1>Quan Minh Tran</h1>
-        <img src="images/Me.jpg" class="MyPhoto">
-
-        <p>My name is Quan Tran, an international student from Vietnam. I am currently in my senior year at Eastern Washington University, 
-            pursuing a Bachelor of Science in Computer Science. 
-            With a strong background in computers, 
-            I am passionate about understanding and solving complex technology problems.
-            I am dedicated to applying critical thinking and innovative approaches to address real-world challenges and create impactful solutions in the field of technology.</p>
-
-        <h2>My Links</h2>
-        <!-- dynamically generate external links from JSON file -->
-        <ul id="myLinks"></ul>
-    </main>
-    
+<body class="home">
+    <div class="main">
+        <div class="button-container">
+            <a href="pages/about.html">ABOUT ME</a>
+            <a href="https://qtran6-dashboard-widgets.netlify.app">MY PROJECTS</a>
+            <a href="https://qtran6-contact-card.vercel.app/DsUL.vcf">CONTACT INFORMATION</a>
+        </div>
+    </div>
 </body>
 </html>
