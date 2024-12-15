@@ -1,0 +1,64 @@
+/* Your baseline styles */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Baseline Font Sizes */
+html {
+    font-family: "Roboto Mono", monospace;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+/* Responsive Images */
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive typography */
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.83rem;
+}
+
+h6 {
+    font-size: 0.67rem;
+}
+
+ul#myLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#myLinks li {
+    display: inline;
+    margin: 0 10px;
+}

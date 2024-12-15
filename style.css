@@ -1,12 +1,38 @@
-body{
-    background-color: powderblue;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* Body */
+
+body {
+    min-height: 100vh;
+    background-image: url('images/anime-sakura.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+  
+  /* Main Container */
+main {
+    width: 100%;
+    margin-top: 7%;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2em;
+
+    /* centers container to page */
+    margin-inline: auto;
+
+    /* adjust to your design */
+    max-width: 30em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
-    text-align: center;
-    color: #f80091;
-    margin-top: 100px;
+.MyPhoto {
+    border-radius: 10px;
 }
+  
