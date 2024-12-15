@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   
       data.myLinks.forEach(({ url, name }) => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="${url}" target="_blank">${name}</a>`;
+        if(url == '../index.html') li.innerHTML = `<a href="${url}">${name}</a>`;
+        else li.innerHTML = `<a href="${url}" target="_blank">${name}</a>`;
         fragment.appendChild(li);
       });
   

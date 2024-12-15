@@ -11,6 +11,10 @@
         {
         "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/quan-tran2001"
+        },
+        {
+        "name": "Home Page",
+        "url": "../index.html"
         }
         ]
     }

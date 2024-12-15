@@ -3,8 +3,17 @@
     background: url('../images/sulivan-lake.jpg') no-repeat bottom center fixed;
     background-size: cover;
     display: flex;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
 }
+
+/* Home Page Bottons */
+
+
+
 
 /* About Me Body */
 .about {
