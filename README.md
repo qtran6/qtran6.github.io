@@ -1,8 +1,8 @@
 
 ## My classmates:
-*Andrew - Adobe Photoshop\n
-*Nathan - Video games\n
-*James - Video games\n
+*Andrew - Adobe Photoshop
+*Nathan - Video games
+*James - Video games
 
 ## Magical Realm:
 Naruto World
