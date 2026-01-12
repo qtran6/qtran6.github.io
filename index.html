@@ -8,13 +8,31 @@
 <body>
     <h1>Hi classmates, it's Quan, this is my project for COMP 193 - Ray Tracing w/ WebGPU</h1>
     <p>I am just curious about how computer graphics works, and why it takes so much GPU memory to run</p>
-     <button onclick="castSpell()">Click Me</button>
-     <p id="spellResult"></p>
+    <button onclick="castSpell()">Click Me</button>
+    <p id="spellResult"></p>
+    <button onclick="showPerformance()">Performance</button>button>
+    <p id="performance"></p>
     
-     <script>
-     function castSpell() {
-         document.getElementById("spellResult").innerText = "Button clicked successfully.";
-     }
-     </script>
+    <script>
+        function castSpell() {
+            document.getElementById("spellResult").innerText = "Button clicked successfully.";
+        }
+        function heavyLoop() {
+        let x = 0;
+        for (let i = 0; i < 5e7; i++) x = (x + 1) | 0
+        }
+    
+        function showPerformance() {
+            let t1 = performance.now();
+            heavyLoop();
+            let t2 = performance.now();
+            heavyLoop();
+            let t3 = performance.now();
+    
+            document.getElementByID("performance").innerText =
+            "First run: " + (t2 - t1).toFixed(1) + "ms\n" +
+            "Second run: " + (t3 - t2).toFixed(1) + "ms";
+        }
+    </script>
 </body>
 </html>
