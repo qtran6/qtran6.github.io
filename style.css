@@ -40,7 +40,7 @@ body {
 .hero .eyebrow {
    text-transform: uppercase;
    letter-spacing: 0.18em;
-   font-size: 12px;
+   font-size: 14px;
    color: #e3c199;
    margin: 0 0 6px;
 }
@@ -54,7 +54,7 @@ body {
 
 .hero p {
    margin: 6px 0 10px;
-   max-width: 760px;
+   max-width: 800px;
    line-height: 1.6;
 }
 
