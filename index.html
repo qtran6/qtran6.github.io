@@ -9,7 +9,7 @@
     <main class="page">
         <section class="hero">
             <p class="eyebrow">Quest Board</p>
-            <h1>Hi classmates, it's Quan. This is my COMP 193 ray tracing journey.</h1>
+            <h1>Hi classmates, it's Quan. <br>This is my COMP 193 ray tracing journey.</h1>
             <p>I am curious about how computer graphics works and why it takes so much GPU memory to run. Track the key quests below.</p>
             <button class="cta" onclick="showPerformance()">Check Performance</button>
             <p id="performance"></p>
@@ -26,19 +26,43 @@
             </div>
 
             <div class="quests">
-                <!-- <article class="quest-card">
+                <article class="quest-card" role="button" tabindex="0">
                     <div class="quest-top">
-                        <h3 class="quest-title">Basic Ray Generation</h3>
-                        <span class="status ongoing">In Progress</span>
+                        <h3 class="quest-title">Scroll 1</h3>
+                        <span class="status done">Done</span>
                     </div>
-                    <p class="quest-body">Wire up the ray-gen shader, build the scene buffer, and validate the first pixels render without artifacts.</p>
+                    <p class="quest-body">Build the first scroll demo so classmates can explore the WebGPU scene.</p>
                     <div class="meta">
-                        <span class="tag">Task: shader + buffer</span>
-                        <span class="tag">Owner: Quan</span>
+                        <span class="tag">github.io</span>
+                        <span class="tag">basic HTML, CSS, and JS</span>
                     </div>
                 </article>
 
-                <article class="quest-card">
+                <article class="quest-card" role="button" tabindex="0">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Scroll 2</h3>
+                        <span class="status done">Done</span>
+                    </div>
+                    <p class="quest-body">Build the first WebGPU through a rendering pipeline.</p>
+                    <div class="meta">
+                        <span class="tag">shader + buffer</span>
+                        <span class="tag">WGSL</span>
+                    </div>
+                </article>
+
+                <article class="quest-card" role="button" tabindex="0">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Scroll 3</h3>
+                        <span class="status ongoing">Inprogress</span>
+                    </div>
+                    <p class="quest-body">Build the first WebGPU through a rendering pipeline.</p>
+                    <div class="meta">
+                        <span class="tag">shader + buffer</span>
+                        <span class="tag">WGSL</span>
+                    </div>
+                </article>
+
+                <!--<article class="quest-card">
                     <div class="quest-top">
                         <h3 class="quest-title">Performance Telemetry</h3>
                         <span class="status ongoing">In Progress</span>
