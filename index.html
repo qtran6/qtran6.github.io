@@ -6,12 +6,77 @@
     <title>Quan Tran COMP 193 Project</title>
 </head>
 <body>
-    <h1>Hi classmates, it's Quan, this is my project for COMP 193 - Ray Tracing w/ WebGPU</h1>
-    <p>I am just curious about how computer graphics works, and why it takes so much GPU memory to run</p>
-    <button onclick="castSpell()">Click Me</button>
-    <p id="spellResult"></p>
-    <button onclick="showPerformance()">Performance</button>
-    <p id="performance"></p>
+    <main class="page">
+        <section class="hero">
+            <p class="eyebrow">Quest Board</p>
+            <h1>Hi classmates, it's Quan. This is my COMP 193 ray tracing journey.</h1>
+            <p>I am curious about how computer graphics works and why it takes so much GPU memory to run. Track the key quests below.</p>
+            <button class="cta" onclick="showPerformance()">Check Performance</button>
+            <p id="performance"></p>
+        </section>
+
+        <section class="board">
+            <div class="board-header">
+                <h2 class="board-title">Current Quests</h2>
+                <!-- <div class="chips">
+                    <span class="chip">WebGPU</span>
+                    <span class="chip">Shading</span>
+                    <span class="chip">Optimization</span>
+                </div> -->
+            </div>
+
+            <div class="quests">
+                <!-- <article class="quest-card">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Basic Ray Generation</h3>
+                        <span class="status ongoing">In Progress</span>
+                    </div>
+                    <p class="quest-body">Wire up the ray-gen shader, build the scene buffer, and validate the first pixels render without artifacts.</p>
+                    <div class="meta">
+                        <span class="tag">Task: shader + buffer</span>
+                        <span class="tag">Owner: Quan</span>
+                    </div>
+                </article>
+
+                <article class="quest-card">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Performance Telemetry</h3>
+                        <span class="status ongoing">In Progress</span>
+                    </div>
+                    <p class="quest-body">Hook up timing around dispatch, capture GPU timings, and surface FPS in the UI via the performance button.</p>
+                    <div class="meta">
+                        <span class="tag">Task: metrics</span>
+                        <span class="tag">Link: Performance</span>
+                    </div>
+                </article>
+
+                <article class="quest-card">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Material & Lighting Pass</h3>
+                        <span class="status blocked">Blocked</span>
+                    </div>
+                    <p class="quest-body">Add diffuse + specular shading with simple shadows. Waiting on stable ray-gen output before layering lights.</p>
+                    <div class="meta">
+                        <span class="tag">Task: shading</span>
+                        <span class="tag">Blocker: validation</span>
+                    </div>
+                </article>
+
+                <article class="quest-card">
+                    <div class="quest-top">
+                        <h3 class="quest-title">Packaging & Demo</h3>
+                        <span class="status done">Done</span>
+                    </div>
+                    <p class="quest-body">Minify the spell scripts, bundle assets, and get the demo ready to share with classmates.</p>
+                    <div class="meta">
+                        <span class="tag">Task: release</span>
+                        <span class="tag">Status: shipped</span>
+                    </div>
+                </article> -->
+            </div>
+        </section>
+    </main>
+
     <script src="spell-min.js"></script>
 </body>
 </html>
