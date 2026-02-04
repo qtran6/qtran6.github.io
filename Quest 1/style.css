@@ -1,3 +1,6 @@
+/* import style */
+@import url(../style.css);
+
 /* Style of the html, body tags and the container class */
 html, body, .container {
   overflow: hidden;
@@ -7,6 +10,13 @@ html, body, .container {
   padding: 0;
   place-content: center center;
   background-color: #160b30;
+}
+
+.nav-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
 }
 
 /* canvas tag style by id */
