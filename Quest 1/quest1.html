@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <!-- Comments in HTML is enclosed by these -->
 <html>
 <head>
@@ -12,12 +10,51 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> 
   <!-- Webpage icon -->
-  <link rel="icon" href="image/icon/striped-sun.svg" type="image/x-icon">
-  
-</head>
-<body>
+  <link rel="icon" href="../image/icon/sun.svg" type="image/x-icon">
   <div class="nav-back">
     <a class="cta" href="../index.html">Back</a>
   </div>
+</head>
+<body>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      var note = document.createElement('div');
+      note.textContent = 'Press F5 for slightly different views';
+      Object.assign(note.style, {
+        position: 'fixed',
+        top: '1rem',
+        left: '50%',
+        transform: 'translate(-50%, -8px)',
+        background: '#222',
+        color: '#fff',
+        padding: '0.75rem 1rem',
+        borderRadius: '8px',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+        fontFamily: 'sans-serif',
+        fontSize: '0.9rem',
+        zIndex: '1000',
+        opacity: '0',
+        transition: 'opacity 180ms ease, transform 180ms ease'
+      });
+
+      document.body.appendChild(note);
+
+      requestAnimationFrame(function () {
+        note.style.opacity = '1';
+        note.style.transform = 'translate(-50%, 0)';
+      });
+
+      setTimeout(function () {
+        note.style.opacity = '0';
+        note.style.transform = 'translate(-50%, -8px)';
+      }, 2200);
+
+      setTimeout(function () {
+        if (note && note.parentNode) {
+          note.parentNode.removeChild(note);
+        }
+      }, 2600);
+    });
+  </script>
 </body>
 </html>
